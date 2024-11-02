@@ -27,44 +27,7 @@ cd blog
 ```bash
 # Instalar dependências base do projeto
 pnpm install
-
-# Instalar e configurar Tailwind CSS
-pnpm install -D tailwindcss postcss autoprefixer
-pnpm exec tailwindcss init -p
-
-# Instalar dependências do shadcn/ui
-pnpm install @radix-ui/react-slot
-pnpm install tailwindcss-animate class-variance-authority clsx tailwind-merge
-pnpm add -D @types/node
-
-# Instalar CLI do shadcn-ui
-pnpm install shadcn-ui
-
-# Inicializar shadcn-ui (Selecione as opções padrão quando solicitado)
-pnpm dlx shadcn-ui init
-
-# Instalar componentes necessários
-pnpm dlx shadcn-ui add card
-pnpm dlx shadcn-ui add button
 ```
-
-## ⚙️ Configuração
-
-1. Certifique-se de que seu `tsconfig.json` inclui as seguintes configurações:
-```json
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
-}
-```
-
-2. Verifique se o `tailwind.config.js` está configurado corretamente com as configurações do shadcn/ui
-
-3. Certifique-se de que o arquivo `src/index.css` contém as variáveis CSS necessárias para o tema
 
 ## 🏃‍♂️ Rodando o projeto
 
@@ -122,11 +85,3 @@ pnpm dlx shadcn-ui add [nome-do-componente]
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## ✨ Contribuindo
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
